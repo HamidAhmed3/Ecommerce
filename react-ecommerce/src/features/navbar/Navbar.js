@@ -10,16 +10,13 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Dashboard', href: '#', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'About Us', href: '#', current: false },
 ]
 const userNavigation = [
-  { name: 'Your Profile', href: '#' },
-  { name: 'Settings', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Your Profile', link: '/' },
+  { name: 'Settings', link: '/' },
+  { name: 'Sign out', link: '/login' },
 ]
 
 function classNames(...classes) {
@@ -40,6 +37,7 @@ export default function Navbar({children}) {
                       <Link to='/'>
                         <img
                           className="h-8 w-8"
+                          // Logo in below line
                           src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                           alt="Your Company"
                         />
@@ -48,7 +46,7 @@ export default function Navbar({children}) {
                       <div className="hidden md:block">
                         <div className="ml-10 flex items-baseline space-x-4">
                           {navigation.map((item) => (
-                            <a
+                            <Link
                               key={item.name}
                               href={item.href}
                               className={classNames(
@@ -60,7 +58,7 @@ export default function Navbar({children}) {
                               aria-current={item.current ? 'page' : undefined}
                             >
                               {item.name}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -100,15 +98,14 @@ export default function Navbar({children}) {
                               {userNavigation.map((item) => (
                                 <Menu.Item key={item.name}>
                                   {({ active }) => (
-                                    <a
-                                      href={item.href}
+                                    <Link to={item.link}                                     
                                       className={classNames(
                                         active ? 'bg-gray-100' : '',
                                         'block px-4 py-2 text-sm text-gray-700'
                                       )}
                                     >
                                       {item.name}
-                                    </a>
+                                    </Link>
                                   )}
                                 </Menu.Item>
                               ))}
@@ -189,7 +186,7 @@ export default function Navbar({children}) {
   
           <header className="bg-white shadow">
             <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-              <h1 className="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
+              <h1 className="text-3xl font-bold tracking-tight text-gray-900">Dropshipping</h1>
             </div>
           </header>
           <main>

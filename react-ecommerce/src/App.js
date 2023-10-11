@@ -1,6 +1,6 @@
 import { Counter } from './features/counter/Counter';
 import './App.css';
-import Home from './pages/Home';
+import Shop from './pages/Home';
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import {
@@ -13,6 +13,7 @@ import {
 import CartPage from './pages/CartPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import Protected from './features/auth/components/protected';
+import Home from './pages/Home';
 
 const router = createBrowserRouter([
   {
@@ -36,7 +37,7 @@ const router = createBrowserRouter([
               </Protected>
   },
   {
-    path: "/product-detail",
+    path: "/product-detail/:id",
     element: <Protected><ProductDetailPage></ProductDetailPage>
               </Protected>
   }
