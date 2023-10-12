@@ -6,7 +6,7 @@ export function createUser(userData) {
           headers:{'content-type':'application/json'}
         }) 
         const data = await response.json()
-        resolve()
+        resolve({data})
         }
 );
 }

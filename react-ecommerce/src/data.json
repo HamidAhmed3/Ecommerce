@@ -560,44 +560,32 @@
       "id": 1
     },
     {
-      "email": "testuser2@gmail.com",
-      "password": "asdf",
-      "id": 2
-    },
-    {
-      "email": "testuser2@gmail.com",
-      "password": "asdf",
-      "id": 3
-    },
-    {
-      "email": "testuser2@gmail.com",
-      "password": "asdf",
-      "id": 4
-    },
-    {
-      "email": "testuser2@gmail.com",
-      "password": "asdf",
-      "id": 5
-    },
-    {
-      "email": "12@gmail.com",
-      "password": "111",
-      "id": 6
-    },
-    {
-      "email": "12@gmail.com",
-      "password": "111",
-      "id": 7
-    },
-    {
-      "email": "12@gmail.com",
-      "password": "111",
-      "id": 8
-    },
-    {
       "email": "Hamid@gmail.com",
       "password": "123",
       "id": 9
+    }
+  ],
+  "cart": [
+    {
+      "id": 4,
+      "title": "OPPOF19",
+      "description": "OPPO F19 is officially announced on April 2021.",
+      "price": 280,
+      "discountPercentage": 17.91,
+      "rating": 4.3,
+      "stock": 123,
+      "brand": "OPPO",
+      "category": "smartphones",
+      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/4/1.jpg",
+        "https://i.dummyjson.com/data/products/4/2.jpg",
+        "https://i.dummyjson.com/data/products/4/3.jpg",
+        "https://i.dummyjson.com/data/products/4/4.jpg",
+        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+      ],
+      "quantity": 3,
+      "user": 1
     }
   ]
 }
