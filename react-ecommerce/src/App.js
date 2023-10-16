@@ -1,13 +1,9 @@
-import { Counter } from './features/counter/Counter';
 import './App.css';
-import Shop from './pages/Home';
 import SignupPage from './pages/SignupPage';
 import LoginPage from './pages/LoginPage';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 // import Cart from './features/cart/Cart';
 import CartPage from './pages/CartPage';
@@ -18,6 +14,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { selectLoggedInUser } from './features/auth/authSlice';
 import {fetchItemsByUserIdAsync} from '../src/features/cart/cartSlice'
+import Checkout from './pages/Checkout';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +36,14 @@ const router = createBrowserRouter([
     element: <Protected>
               <CartPage></CartPage>
               </Protected>
+  },
+  {
+    path: '/checkout',
+    element: (
+      <Protected>
+        <Checkout></Checkout>
+      </Protected>
+    ),
   },
   {
     path: "/product-detail/:id",
