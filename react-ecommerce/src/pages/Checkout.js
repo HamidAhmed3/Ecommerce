@@ -1,9 +1,9 @@
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import {useForm} from "react-hook-form";
 import { useDispatch, useSelector } from 'react-redux';
 import { selectLoggedInUser, updateUserAsync } from '../features/auth/authSlice';
-import { createOrderAsync } from '../features/order/OrderSlice';
+import { createOrderAsync, selectCurrentOrder } from '../features/order/OrderSlice';
 import { selectItems } from '../features/cart/cartSlice';
 
 function Checkout() {
@@ -15,21 +15,30 @@ function Checkout() {
     const { register, handleSubmit, reset, formState: {errors}, } = useForm();
 
     const user = useSelector(selectLoggedInUser);
+    const currentOrder = useSelector(selectCurrentOrder);
 
     const [selectedAddress, setSelectedAddress] = useState(null);
-    const [selectPaymentMethod, setPaymentMethod] = useState('cash');
+    const [paymentMethod, setPaymentMethod] = useState('cash');
 
     const handleAddress = (e) => {
         setSelectedAddress(user.addresses[e.target.value])
     }
 
     const handleOrder = () => {
-        const order = {items, totalAmount, totalItems, user, selectedAddress}
+      if(selectedAddress && paymentMethod) {
+        const order = {items, totalAmount, totalItems, user, selectedAddress, paymentMethod}
         dispatch(createOrderAsync(order))
+      } else {
+        alert('Enter Address and Payment method')
+      }
     }
 
 
+
   return (
+    <>
+      {!items.length && <Navigate to="/" replace={true}></Navigate>}
+      {currentOrder && <Navigate to={`/order-success/${currentOrder.id}`} replace={true}></Navigate>}
     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
         <div className="lg:col-span-3">
@@ -288,15 +297,12 @@ function Checkout() {
                   </fieldset>
                 </div>
                 <div className="mt-6 flex items-center justify-end gap-x-6">
-                    <Link to='/orderConfirmed'>
                         <button
                             onClick={handleOrder}
-                            type="submit"
                             className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
                             Confirm Order
                         </button>
-                    </Link>
                 </div>
               </div>
             </div>
@@ -307,6 +313,7 @@ function Checkout() {
     
       </div>
     </div>
+    </>
   );
 }
 

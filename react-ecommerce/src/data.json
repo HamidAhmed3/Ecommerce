@@ -582,141 +582,361 @@
           "city": "Lahore",
           "province": "Punjab",
           "zip": "54000"
-        },
-        {
-          "name": "Hamid Ahmed",
-          "email": "Hamid@gmail.com",
-          "contact": "03006",
-          "streetAddress": "12 A",
-          "city": "Lahore",
-          "province": "Punjab ",
-          "zip": "54000"
-        },
-        {
-          "name": "Hamid",
-          "email": "Hamid@gmail.com",
-          "contact": "123",
-          "streetAddress": "12345",
-          "city": "22",
-          "province": "33",
-          "zip": "44"
-        },
-        {
-          "name": "Hamid",
-          "email": "Hamid@gmail.com",
-          "contact": "123",
-          "streetAddress": "12345",
-          "city": "22",
-          "province": "33",
-          "zip": "44"
         }
       ],
       "id": 9
     }
   ],
-  "cart": [
+  "cart": [],
+  "orders": [
     {
-      "title": "OPPOF19",
-      "description": "OPPO F19 is officially announced on April 2021.",
-      "price": 280,
-      "discountPercentage": 17.91,
-      "rating": 4.3,
-      "stock": 123,
-      "brand": "OPPO",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/4/1.jpg",
-        "https://i.dummyjson.com/data/products/4/2.jpg",
-        "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/4.jpg",
-        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+      "items": [
+        {
+          "title": "iPhone X",
+          "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+          "price": 899,
+          "discountPercentage": 17.94,
+          "rating": 4.44,
+          "stock": 34,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/2/1.jpg",
+            "https://i.dummyjson.com/data/products/2/2.jpg",
+            "https://i.dummyjson.com/data/products/2/3.jpg",
+            "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 9,
+          "id": 4
+        },
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 9,
+          "id": 5
+        },
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 9,
+          "id": 6
+        }
       ],
-      "quantity": 1,
-      "user": 1,
+      "totalAmount": 3397,
+      "totalItems": 3,
+      "user": {
+        "email": "Hamid@gmail.com",
+        "password": "123",
+        "addresses": [
+          {
+            "name": "Hamid Ahmed",
+            "email": "Hamid@gmail.com",
+            "contact": "090078601",
+            "streetAddress": "House 2, Street 39",
+            "city": "Lahore",
+            "province": "Punjab",
+            "zip": "54000"
+          }
+        ],
+        "id": 9
+      },
+      "selectedAddress": {
+        "name": "Hamid Ahmed",
+        "email": "Hamid@gmail.com",
+        "contact": "090078601",
+        "streetAddress": "House 2, Street 39",
+        "city": "Lahore",
+        "province": "Punjab",
+        "zip": "54000"
+      },
+      "paymentMethod": "cash",
       "id": 1
     },
     {
-      "title": "Brown Perfume",
-      "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
-      "price": 40,
-      "discountPercentage": 15.66,
-      "rating": 4,
-      "stock": 52,
-      "brand": "Royal_Mirage",
-      "category": "fragrances",
-      "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/12/1.jpg",
-        "https://i.dummyjson.com/data/products/12/2.jpg",
-        "https://i.dummyjson.com/data/products/12/3.png",
-        "https://i.dummyjson.com/data/products/12/4.jpg",
-        "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+      "items": [
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 1,
+          "user": 9,
+          "id": 4
+        },
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 9,
+          "id": 5
+        }
       ],
-      "quantity": 2,
-      "user": 1,
+      "totalAmount": 2748,
+      "totalItems": 2,
+      "user": {
+        "email": "Hamid@gmail.com",
+        "password": "123",
+        "addresses": [
+          {
+            "name": "Hamid Ahmed",
+            "email": "Hamid@gmail.com",
+            "contact": "090078601",
+            "streetAddress": "House 2, Street 39",
+            "city": "Lahore",
+            "province": "Punjab",
+            "zip": "54000"
+          }
+        ],
+        "id": 9
+      },
+      "selectedAddress": {
+        "name": "Hamid Ahmed",
+        "email": "Hamid@gmail.com",
+        "contact": "090078601",
+        "streetAddress": "House 2, Street 39",
+        "city": "Lahore",
+        "province": "Punjab",
+        "zip": "54000"
+      },
+      "paymentMethod": "cash",
       "id": 2
     },
     {
-      "title": "iPhone 9",
-      "description": "An apple mobile which is nothing like apple",
-      "price": 549,
-      "discountPercentage": 12.96,
-      "rating": 4.69,
-      "stock": 94,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/1/1.jpg",
-        "https://i.dummyjson.com/data/products/1/2.jpg",
-        "https://i.dummyjson.com/data/products/1/3.jpg",
-        "https://i.dummyjson.com/data/products/1/4.jpg",
-        "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        },
+        {
+          "title": "Brown Perfume",
+          "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+          "price": 40,
+          "discountPercentage": 15.66,
+          "rating": 4,
+          "stock": 52,
+          "brand": "Royal_Mirage",
+          "category": "fragrances",
+          "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/12/1.jpg",
+            "https://i.dummyjson.com/data/products/12/2.jpg",
+            "https://i.dummyjson.com/data/products/12/3.png",
+            "https://i.dummyjson.com/data/products/12/4.jpg",
+            "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 1,
+          "id": 2
+        },
+        {
+          "title": "iPhone 9",
+          "description": "An apple mobile which is nothing like apple",
+          "price": 549,
+          "discountPercentage": 12.96,
+          "rating": 4.69,
+          "stock": 94,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 3
+        }
       ],
-      "quantity": 1,
-      "user": 1,
+      "totalAmount": 909,
+      "totalItems": 4,
+      "user": {
+        "email": "testuser@gmail.com",
+        "password": "1234",
+        "addresses": [
+          {
+            "name": "Test User",
+            "email": "testuser@gmail.com",
+            "contact": "1234",
+            "streetAddress": "house 3",
+            "city": "Lahore",
+            "province": "Punjab",
+            "zip": "54000"
+          }
+        ],
+        "id": 1
+      },
+      "selectedAddress": {
+        "name": "Test User",
+        "email": "testuser@gmail.com",
+        "contact": "1234",
+        "streetAddress": "house 3",
+        "city": "Lahore",
+        "province": "Punjab",
+        "zip": "54000"
+      },
+      "paymentMethod": "cash",
       "id": 3
     },
     {
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/2/1.jpg",
-        "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+      "items": [
+        {
+          "title": "OPPOF19",
+          "description": "OPPO F19 is officially announced on April 2021.",
+          "price": 280,
+          "discountPercentage": 17.91,
+          "rating": 4.3,
+          "stock": 123,
+          "brand": "OPPO",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/4/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/4/1.jpg",
+            "https://i.dummyjson.com/data/products/4/2.jpg",
+            "https://i.dummyjson.com/data/products/4/3.jpg",
+            "https://i.dummyjson.com/data/products/4/4.jpg",
+            "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 1
+        },
+        {
+          "title": "Brown Perfume",
+          "description": "Royal_Mirage Sport Brown Perfume for Men & Women - 120ml",
+          "price": 40,
+          "discountPercentage": 15.66,
+          "rating": 4,
+          "stock": 52,
+          "brand": "Royal_Mirage",
+          "category": "fragrances",
+          "thumbnail": "https://i.dummyjson.com/data/products/12/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/12/1.jpg",
+            "https://i.dummyjson.com/data/products/12/2.jpg",
+            "https://i.dummyjson.com/data/products/12/3.png",
+            "https://i.dummyjson.com/data/products/12/4.jpg",
+            "https://i.dummyjson.com/data/products/12/thumbnail.jpg"
+          ],
+          "quantity": 2,
+          "user": 1,
+          "id": 2
+        },
+        {
+          "title": "iPhone 9",
+          "description": "An apple mobile which is nothing like apple",
+          "price": 549,
+          "discountPercentage": 12.96,
+          "rating": 4.69,
+          "stock": 94,
+          "brand": "Apple",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/1/1.jpg",
+            "https://i.dummyjson.com/data/products/1/2.jpg",
+            "https://i.dummyjson.com/data/products/1/3.jpg",
+            "https://i.dummyjson.com/data/products/1/4.jpg",
+            "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 1,
+          "id": 3
+        }
       ],
-      "quantity": 1,
-      "user": 9,
+      "totalAmount": 909,
+      "totalItems": 4,
+      "user": {
+        "email": "testuser@gmail.com",
+        "password": "1234",
+        "addresses": [
+          {
+            "name": "Test User",
+            "email": "testuser@gmail.com",
+            "contact": "1234",
+            "streetAddress": "house 3",
+            "city": "Lahore",
+            "province": "Punjab",
+            "zip": "54000"
+          }
+        ],
+        "id": 1
+      },
+      "selectedAddress": {
+        "name": "Test User",
+        "email": "testuser@gmail.com",
+        "contact": "1234",
+        "streetAddress": "house 3",
+        "city": "Lahore",
+        "province": "Punjab",
+        "zip": "54000"
+      },
+      "paymentMethod": "cash",
       "id": 4
-    },
-    {
-      "title": "Samsung Universe 9",
-      "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-      "price": 1249,
-      "discountPercentage": 15.46,
-      "rating": 4.09,
-      "stock": 36,
-      "brand": "Samsung",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/3/1.jpg"
-      ],
-      "quantity": 1,
-      "user": 9,
-      "id": 5
     }
-  ],
-  "orders" : [
-
   ]
 }
