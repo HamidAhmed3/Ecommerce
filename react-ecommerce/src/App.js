@@ -18,6 +18,10 @@ import Checkout from './pages/Checkout';
 import  PageNotFound  from './pages/Error404';
 import OrderSuccessPage from './pages/OrderSucces';
 import Logout from './features/auth/components/Logout';
+import AdminHome from './pages/AdminHome';
+import AdminProductDetailPage from './pages/AdminProductDetailPage copy'; 
+import ProtectedAdmin from './features/auth/components/protectedAdmin'
+import ProductForm from './features/admin/ProductForm';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +29,12 @@ const router = createBrowserRouter([
     element: <Protected>
              <Home></Home>
              </Protected>
+  },
+  {
+    path: "/admin",
+    element: <ProtectedAdmin>
+             <AdminHome></AdminHome>
+             </ProtectedAdmin>
   },
   {
     path: "/login",
@@ -50,8 +60,18 @@ const router = createBrowserRouter([
   },
   {
     path: "/product-detail/:id",
-    element: <Protected><ProductDetailPage></ProductDetailPage>
+    element: <Protected><AdminProductDetailPage></AdminProductDetailPage>
               </Protected>
+  },
+  {
+    path: "/admin/product-detail/:id",
+    element: <ProtectedAdmin><ProductDetailPage></ProductDetailPage>
+              </ProtectedAdmin>
+  },
+  {
+    path: "/admin/add-product",
+    element: <ProtectedAdmin><ProductForm></ProductForm>
+              </ProtectedAdmin>
   },
   {
     path: '/order-success/:id',

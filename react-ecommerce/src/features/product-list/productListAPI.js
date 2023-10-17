@@ -18,4 +18,18 @@ export function fetchProductById(id) {
   );
 }
 
+export function addProduct(product) {
+  return new Promise(async (resolve) => {
+    // TO DO: remove hardcode
+    const response = await fetch('http://localhost:8008/products/',{
+      method:'POST',
+      body: JSON.stringify(product),
+      headers:{'content-type':'application/json'}
+    })
+    const data = await response.json()
+    resolve({data})
+  }
+  );
+}
+
 

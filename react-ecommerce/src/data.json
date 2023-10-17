@@ -551,12 +551,41 @@
         "https://i.dummyjson.com/data/products/30/3.jpg",
         "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
       ]
+    },
+    {
+      "title": "Whey protein",
+      "description": "Isolated whey protein",
+      "price": "113",
+      "thumbnail": "https://www.overshopping.pk/products/optimum-nutrition-gold-standard-100whey-protein-powder",
+      "images": [
+        "https://www.overshopping.pk/products/optimum-nutrition-gold-standard-100whey-protein-powder",
+        "https://www.overshopping.pk/products/optimum-nutrition-gold-standard-100whey-protein-powder",
+        "https://www.overshopping.pk/products/optimum-nutrition-gold-standard-100whey-protein-powder",
+        "https://www.overshopping.pk/products/optimum-nutrition-gold-standard-100whey-protein-powder"
+      ],
+      "rating": 0,
+      "id": 31
+    },
+    {
+      "title": "Whey",
+      "description": "Whey",
+      "price": "5",
+      "thumbnail": "https://shapingnutrition.com/product/whey-protein-price-in-pakistan/",
+      "images": [
+        "https://shapingnutrition.com/product/whey-protein-price-in-pakistan/",
+        "https://shapingnutrition.com/product/whey-protein-price-in-pakistan/",
+        "https://shapingnutrition.com/product/whey-protein-price-in-pakistan/",
+        "https://shapingnutrition.com/product/whey-protein-price-in-pakistan/"
+      ],
+      "rating": 0,
+      "id": 32
     }
   ],
   "users": [
     {
       "email": "testuser@gmail.com",
       "password": "1234",
+      "role": "user",
       "addresses": [
         {
           "name": "Test User",
@@ -573,6 +602,7 @@
     {
       "email": "Hamid@gmail.com",
       "password": "123",
+      "role": "user",
       "addresses": [
         {
           "name": "Hamid Ahmed",
@@ -585,6 +615,13 @@
         }
       ],
       "id": 9
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "addresses": [],
+      "role": "admin",
+      "id": 10
     }
   ],
   "cart": [
