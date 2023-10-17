@@ -3,7 +3,7 @@ import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
 import { useDispatch, useSelector } from 'react-redux';
 import { selectProductById } from '../productListSlice'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import {fetchProductByIdAsync} from '../productListSlice'
 import { selectLoggedInUser } from '../../auth/authSlice';
 import { addToCartAsync } from '../../cart/cartSlice';
@@ -72,9 +72,9 @@ export default function ProductDetails() {
               </li>
             ))}
             <li className="text-sm">
-              <a href={product.href} aria-current="page" className="font-medium text-gray-500 hover:text-gray-600">
-                {product.title}
-              </a>
+              <Link to='/' aria-current="page" className="font-medium text-xl text-indigo-600 hover:text-indigo-500">
+                <span>&larr; return to home</span>
+              </Link>
             </li>
           </ol>
         </nav>

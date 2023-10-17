@@ -17,6 +17,7 @@ import {fetchItemsByUserIdAsync} from '../src/features/cart/cartSlice'
 import Checkout from './pages/Checkout';
 import  PageNotFound  from './pages/Error404';
 import OrderSuccessPage from './pages/OrderSucces';
+import Logout from './features/auth/components/Logout';
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
     element: 
       <OrderSuccessPage></OrderSuccessPage>
 
+  },
+  {
+    path: '/logout',
+    element: <Logout></Logout>,
   },
   {
     path: "*",
